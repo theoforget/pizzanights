@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>CS20 Midterm</title>
+    <link rel="stylesheet" href=style.css>
+    <style>
+        .information {
+            animation: change 20s infinite;
+        }
+        @keyframes change {
+            0%{background-image: url("backgrounds/big1.jpg");}
+            50%{background-image: url("backgrounds/big2.jpg");}
+            100%{background-image: url("backgrounds/big1.jpg");}
+        }
+        @media screen and (max-width: 800px) {
+            @keyframes change {
+                0%{background-image: url("backgrounds/small1.jpg");}
+                50%{background-image: url("backgrounds/small2.jpg");}
+                100%{background-image: url("backgrounds/small1.jpg");}
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="bottom"> <img src="logo.png" width=100px> </div>
+<div class="header"> 
+    <a href=index.html class="logo">
+        PIZZA NIGHTS
+    </a>
+    <div class ="header-menu">
+        <input id="menu-toggle" type="checkbox">
+        <label id="menu-label" for="menu-toggle">
+            <img src="hamburger-menu.png" alt="Menu Icon" height="25px">
+        </label>
+        <ul id="collapse-menu">
+            <a class="active" href=index.html>Home</a>
+            <a href=base.html>Menu</a>
+            <a href=base.html>Order</a>
+            <a href=base.html>Locations</a>
+            <a href=base.html>Reviews</a>
+            <a href=base.html>Contact</a>
+            <a href=base.html>About Us</a>
+        </ul>
+    </div>
+    <div class="header-right">
+        <a class="active" href=index.html>Home</a>
+        <a href=base.html>Menu</a>
+        <a href=base.html>Order</a>
+        <a href=base.html>Locations</a>
+        <a href=base.html>Reviews</a>
+        <a href=base.html>Contact</a>
+        <a href=base.html>About Us</a>
+    </div>
+</div>
+<br/>
+<div class="information">
+    <br> <br> <br> <br>
+    <h1 class="title"> Welcome Hungry Night Crusaders! </h1>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+</div>
+</body>
+</html>
