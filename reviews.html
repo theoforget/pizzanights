@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+  <title>CS20 Midterm</title>
+  <link rel="stylesheet" href=style.css>
+  <style>
+    body {
+      background: url("backgrounds/backgroundreview.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .review-boxes {
+      display: grid;
+      grid-gap: 10px;
+      padding-left: 20%;
+      padding-right: 20%;
+      text-align: center;
+      width: 60%;
+    }
+    .review-info {
+      background-color: rgba(255, 255, 255, 60%);
+      border: 4px solid darkred;
+      font-family: Gill Sans, sans-serif;
+    }
+    .review-header {
+      color: black;
+      padding-top: 3%;
+      font-size: 25px;
+    }
+    .review-body {
+      padding: 3%;
+      font-size: 20px;
+    }
+    @media screen and (max-width: 800px) {
+      .review-header {
+        padding-top: 5%;
+        font-size: 20px;
+      }
+      .review-body {
+        padding: 5%;
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="bottom"> <img src="logo.png" width=100px> </div>
+<div class="header">
+  <a href=index.html class="logo">
+    PIZZA NIGHTS
+  </a>
+  <div class ="header-menu">
+    <input id="menu-toggle" type="checkbox">
+    <label id="menu-label" for="menu-toggle">
+      <img src="hamburger-menu.png" alt="Menu Icon" height="25px">
+    </label>
+    <ul id="collapse-menu">
+      <a href=index.html>Home</a>
+      <a href=base.html>Menu</a>
+      <a href=base.html>Order</a>
+      <a href=base.html>Locations</a>
+      <a class ="active" href="reviews.html">Reviews</a>
+      <a href=contact.html>Contact</a>
+      <a href=about.html>About Us</a>
+    </ul>
+  </div>
+  <div class="header-right">
+    <a href=index.html>Home</a>
+    <a href=base.html>Menu</a>
+    <a href=base.html>Order</a>
+    <a href=base.html>Locations</a>
+    <a class="active" href=base.html>Reviews</a>
+    <a href=contact.html>Contact</a>
+    <a href=about.html>About Us</a>
+  </div>
+</div>
+<br><br><br><br><br><br><br>
+<div class="review-boxes">
+  <div class="review-info">
+    <div class="review-header">
+      Gilly Giohnson -- 5/5 Stars
+    </div>
+    <div class="review-body">
+      Hot diggity, this pizza got the swiggity! I was up until 4 AM doing one
+      of my COMP20 assignments and was so darn hungry I couldn't root, toot, nor
+      shoot. The only cure to my ails was a slice of that delectable, warm,
+      and affordable pizza from Pizza Nights! As soon as the tip of the slice
+      touched these lips of mine, I perked right up with the strength of the
+      Almighty Lord himself. There is no other pizza place I'd trust to feed me
+      when I'm in a pinch! Thanks Pizza Nights!
+    </div>
+  </div>
+  <div class="review-info">
+    <div class="review-header">
+      Morgan Eccles -- 4/5 Stars
+    </div>
+    <div class="review-body">
+      I decided to try Pizza Nights on a whim one night, and I don't have a
+      single regret. I had been working all day and decided to go home at about
+      midnight. On the way home I got awfully peckish, but there was not a
+      single eatery in sight. That's when I saw the restaurant known as Pizza
+      Nights. I went in, ordered a pie, and within 2 minutes I was eating one
+      of their piping hot slices. Though uncommon fare for a man like I, it was
+      delicious nonetheless. I will be returning.
+    </div>
+  </div>
+  <div class="review-info">
+    <div class="review-header">
+    </div>
+    <div class="review-body">
+    </div>
+  </div>
+</div>
+</body>
+</html>
