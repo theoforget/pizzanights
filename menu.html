@@ -12,34 +12,17 @@
                   "slide5.jpg", "slide6.jpg", "slide7.jpg"];
         message = ["Five Nights Special Pizza", "Caesar Salad", "Tropical Pizza", "Mozarella Sticks", "Jimmy's Special Pizza", "Susan's Blend Salad", "Veggie Pizza"];
         currIndex = 0;
-        pause = false;
-        function stopSlides(){
-            pause = true;
-            $("#slides img").fadeIn(0, fix);
-        }
-        function startSlides(){
-            pause = false;
-            fadeoutImg();
-        }
-        function fix() {
-            $("#slides img").attr("src", "images/"+images[currIndex]);
-        }
         function fadeinImg() {
-            if (pause == false) {
-                currIndex++;
-                currIndex = currIndex % images.length;
-                document.getElementById("hiddenmessage").innerHTML = message[currIndex];
-                $("#slides img").attr("src", "images/"+images[currIndex]);
-                $("#slides img").fadeIn(1000, fadeoutImg);
-            }
+            currIndex++;
+            currIndex = currIndex % images.length;
+            document.getElementById("hiddenmessage").innerHTML = message[currIndex];
+            $("#slides img").attr("src", "images/"+images[currIndex]);
+            $("#slides img").fadeIn(1000, fadeoutImg);
         }
         function fadeoutImg() {
-            if (pause == false) {
-                $("#slides img").delay(3000).fadeOut(1000, fadeinImg);
-            }
+            $("#slides img").delay(3000).fadeOut(1000, fadeinImg);
         }
         $(document).ready(function() {
-            pause = false;
             fadeoutImg();
         });
     </script>
@@ -151,7 +134,7 @@
 <div class="main">
     <center>
     <div style="width:300px; height: 300px">
-        <div class="slides" id="slides" onmouseover="stopSlides()" onmouseout="startSlides()">
+        <div class="slides" id="slides">
             <img src="images/slide1.jpg" width=100%>
             <div class="overlay">
                 <div class="text" id="hiddenmessage">Five Nights Special Pizza</div>
