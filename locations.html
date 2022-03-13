@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <title>CS20 Midterm</title>
+    <link rel="stylesheet" href=style.css>
+    <style>
+        body {
+            background: url("backgrounds/locationbg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    .location-grid {
+        display: grid;
+        grid-gap: 10px;
+        padding: 1%;
+        padding-left: 5%;
+        padding-right: 50%;
+        text-align: center;
+        width: 45%;
+    }
+    .location {
+        display: inline-block;
+        padding: 10px 15px;
+        border: 5px solid slategrey;
+        border-radius: 5px;
+        font-size: medium;
+        font-family: Gill Sans, sans-serif;
+        color: antiquewhite;
+        background-color: rgba(54, 53, 53, 0.9);
+    }
+    .location-name {
+        font-weight: bold;
+        font-size: large;
+    }
+    .location-pic {
+        width: 250px;
+    }
+    .location-info {
+        font-family: Gill Sans, sans-serif;
+    }
+        @media screen and (max-width: 800px) {
+            .location-pic {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="bottom"> <img src="logo.png" width=100px> </div>
+<div class="header">
+    <a href=index.html class="logo">
+        PIZZA NIGHTS
+    </a>
+    <div class ="header-menu">
+        <input id="menu-toggle" type="checkbox">
+        <label id="menu-label" for="menu-toggle">
+            <img src="hamburger-menu.png" alt="Menu Icon" height="25px">
+        </label>
+        <ul id="collapse-menu">
+            <a href=index.html>Home</a>
+            <a href=menu.html>Menu</a>
+            <a href=base.html>Order</a>
+            <a class="active" href=locations.html>Locations</a>
+            <a href=reviews.html>Reviews</a>
+            <a href=contact.html>Contact</a>
+            <a href=about.html>About Us</a>
+        </ul>
+    </div>
+    <div class="header-right">
+        <a href=index.html>Home</a>
+        <a href=menu.html>Menu</a>
+        <a href=base.html>Order</a>
+        <a class="active" href=locations.html>Locations</a>
+        <a href=reviews.html>Reviews</a>
+        <a href=contact.html>Contact</a>
+        <a href=about.html>About Us</a>
+    </div>
+</div>
+<br><br><br><br><br><br><br>
+<div class="location-grid">
+    <div class="location">
+        <div class="location-name">
+            Tufts/Somerville
+        </div>
+        <br>
+        <div>
+            <img class="location-pic" src="backgrounds/locationtufts.jpg"
+                 alt="Tufts Pizza Nights">
+        </div>
+        <br>
+        <div class="location-info">
+            Located at ____________, it is in the heart of Somerville and has
+            been serving the residents of the town and nearby Tufts University
+            since ____. This location is the first Pizza Nights to be
+            established and, as such, is a must-see for any pizza connoisseur.
+        </div>
+    </div>
+    <br><br>
+    <div class="location">
+        <div class="location-name">
+            Boston
+        </div>
+        <br>
+        <div>
+            <img class="location-pic" src="backgrounds/locationbos.jpg"
+                 alt="Boston Pizza Nights">
+        </div>
+        <br>
+        <div class="location-info">
+            In the streets of Boston...
+        </div>
+    </div>
+    <br><br>
+    <div class="location">
+        <div class="location-name">
+            Ogden, Utah
+        </div>
+        <br>
+        <div>
+            <img class="location-pic" src="backgrounds/locationut.jpg"
+                 alt="Ogden Pizza Nights">
+        </div>
+        <br>
+        <div class="location-info">
+            Far from our roots in Massachusetts...
+        </div>
+    </div>
+</div>
+</body>
+</html>
