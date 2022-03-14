@@ -4,39 +4,37 @@
     <link rel="stylesheet" href=style.css>
     <style>
         body {
-            background: url("backgrounds/locationbg.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-image: url("backgrounds/locationbg.jpg");
         }
-    .location-grid {
-        display: grid;
-        grid-gap: 10px;
-        padding: 1%;
-        padding-left: 5%;
-        padding-right: 50%;
-        text-align: center;
-        width: 45%;
-    }
-    .location {
-        display: inline-block;
-        padding: 10px 15px;
-        border: 5px solid slategrey;
-        border-radius: 5px;
-        font-size: medium;
-        font-family: Gill Sans, sans-serif;
-        color: antiquewhite;
-        background-color: rgba(54, 53, 53, 0.9);
-    }
-    .location-name {
-        font-weight: bold;
-        font-size: large;
-    }
-    .location-pic {
-        width: 250px;
-    }
-    .location-info {
-        font-family: Gill Sans, sans-serif;
-    }
+        .location-grid {
+            display: grid;
+            grid-gap: 10px;
+            padding: 1%;
+            padding-left: 5%;
+            padding-right: 50%;
+            text-align: center;
+            width: 45%;
+        }
+        .location {
+            display: inline-block;
+            padding: 10px 15px;
+            border: 5px solid darkolivegreen;
+            border-radius: 5px;
+            font-size: medium;
+            font-family: Gill Sans, sans-serif;
+            color: #D3D3D3;
+            background-color: rgba(54, 53, 53, 0.9);
+        }
+        .location-name {
+            font-weight: bold;
+            font-size: large;
+        }
+        .location-pic {
+            width: 250px;
+        }
+        .location-info {
+            font-family: Gill Sans, sans-serif;
+        }
         @media screen and (max-width: 800px) {
             .location-pic {
                 width: 150px;
@@ -58,7 +56,7 @@
         <ul id="collapse-menu">
             <a href=index.html>Home</a>
             <a href=menu.html>Menu</a>
-            <a href=base.html>Order</a>
+            <a href=order.html>Order</a>
             <a class="active" href=locations.html>Locations</a>
             <a href=reviews.html>Reviews</a>
             <a href=contact.html>Contact</a>
@@ -68,7 +66,7 @@
     <div class="header-right">
         <a href=index.html>Home</a>
         <a href=menu.html>Menu</a>
-        <a href=base.html>Order</a>
+        <a href=order.html>Order</a>
         <a class="active" href=locations.html>Locations</a>
         <a href=reviews.html>Reviews</a>
         <a href=contact.html>Contact</a>
@@ -88,10 +86,10 @@
         </div>
         <br>
         <div class="location-info">
-            Located at ____________, it is in the heart of Somerville and has
-            been serving the residents of the town and nearby Tufts University
-            since ____. This location is the first Pizza Nights to be
-            established and, as such, is a must-see for any pizza connoisseur.
+            Our location in Somerville has been serving the residents of the
+            town and nearby Tufts University since 2006. This location is the
+            first Pizza Nights to be established and, as such, is a must-see
+            for any pizza connoisseur.
         </div>
     </div>
     <br><br>
@@ -106,7 +104,9 @@
         </div>
         <br>
         <div class="location-info">
-            In the streets of Boston...
+            In the streets of Boston, this location is our second to be
+            established and faithfully provides Bostonians of all kinds the
+            late night pizza they deserve.
         </div>
     </div>
     <br><br>
@@ -121,9 +121,13 @@
         </div>
         <br>
         <div class="location-info">
-            Far from our roots in Massachusetts...
+            Far from our roots in Massachusetts, a founding member of the team
+            decided to branch out to his hometown of Ogden, Utah. Though quite
+            a distance separates this restaurant from the other two, the taste
+            and quality you expect can still be found here.
         </div>
     </div>
+    <br>
 </div>
 </body>
 </html>
