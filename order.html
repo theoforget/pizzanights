@@ -116,7 +116,7 @@
                 nightspecial = parseInt(document.getElementById("item0").innerHTML.substring(0, 2));
                 if (nightspecial == 1) {
                     document.getElementById("total0").innerHTML = "$6.00";
-                    calculateSubtotal(6);
+                    updateSummary();
                 }
             } else if (code == "10OFF") {
                 var subtotal = 0;
