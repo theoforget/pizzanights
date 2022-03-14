@@ -142,12 +142,12 @@
             } else if (document.getElementById("pickup").checked == false &&
                 document.getElementById("delivery").checked == false) {
                 alert("Select a delivery or pickup!");
-            } else if (document.getElementById("delivery").checked) {
-                if (document.getElementById("street").value == "") {
+            } else if (document.getElementById("delivery").checked &&
+                       document.getElementById("street").value == "") {
                     alert("Enter your street for delivery!");
-                } else if (document.getElementById("city").value == "") {
+            } else if (document.getElementById("delivery").checked &&
+                       document.getElementById("city").value == "") {
                     alert("Enter your city for delivery!");
-                }
             } else {
                 var subtotal = 0;
                 for (v = 0; v < menuItems.length; v++) {
